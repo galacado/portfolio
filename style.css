@@ -41,7 +41,7 @@ h1{
   font-family:var(--serif); font-weight:400; font-size:clamp(30px,4.6vw,42px);
   margin:0 0 20px; line-height:1.25; color:var(--text);
 }
-.intro{max-width:540px; color:var(--text-dim); font-size:16.5px;}
+.intro{max-width:680px; color:var(--text-dim); font-size:16.5px;}
 .intro strong{color:var(--text); font-weight:600;}
 
 /* buttons: monospace + slightly rounder corners, borrowed from the technical direction */
