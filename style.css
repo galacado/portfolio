@@ -96,6 +96,8 @@ footer{padding:40px 0; text-align:center; color:var(--text-dim); font-size:13px;
 .entry-head .org{color:var(--text-dim); font-weight:400;}
 .entry-head .dates{font-family:var(--mono); font-size:12px; color:var(--accent); white-space:nowrap; flex:0 0 auto;}
 .entry ul{margin:10px 0 0; padding-left:18px; color:var(--text-dim); font-size:14px;}
+.entry ul strong{color:var(--text); font-weight:600; font-style:italic;}
+.entry .coursework-label{margin:10px 0 0; color:var(--text); font-weight:600; font-size:14px;}
 .entry ul li{margin-bottom:6px;}
 .entry p.note{color:var(--text-dim); font-size:14px; margin:10px 0 0;}
 
