@@ -59,7 +59,7 @@ section.section{padding:56px 0; border-bottom:1px solid var(--line);}
 }
 
 /* recent work / project grid */
-.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin-bottom:40px;}
 .card{
   border:1px solid var(--line); border-radius:8px; padding:22px; background:var(--card);
   transition:border-color .15s;
