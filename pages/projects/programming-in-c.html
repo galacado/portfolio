@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Programming in C &mdash; Gala Cado</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Gala &Ccaron;ado
+      <div class="logo-sub">MSc student, Security &amp; Network Engineering</div>
+    </div>
+    <div class="navlinks">
+      <a href="../../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <p class="eyebrow">BSc Coursework &middot; Systems Programming</p>
+    <h1 class="page-title">Programming in C</h1>
+    <p class="project-meta">Vrije Universiteit Amsterdam</p>
+    <p class="intro">Implemented four core components of an operating system, and a subset of the Java Virtual Machine, in C.</p>
+    <div class="tag-row">
+      <span class="tag">c</span>
+      <span class="tag">systems programming</span>
+      <span class="tag">operating systems</span>
+    </div>
+  </section>
+
+  <section class="section project-body">
+
+    <div class="block">
+      <h2>Four main components of an operating system</h2>
+      <p class="intro">Implemented four of the main components of an operating system: a shell, a heap allocator, a file system, and a key-value store.</p>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Shell</h3>
+          <p>Implemented a Unix shell similar to sh, bash, and zsh. Supports basic commands such as cd, exit, set, and unset, and can handle piping, sequences, redirection, subshells and more &mdash; including feeding the output of one command into the input of another.</p>
+        </div>
+        <div class="info-box">
+          <h3>Alloc / Malloc</h3>
+          <p>Implemented a heap allocator similar to jemalloc and tcmalloc. It can request chunks of memory from the OS and place objects inside them, implementing commands such as free, malloc, and realloc &mdash; with free able to merge empty chunks so they can be reused by malloc.</p>
+        </div>
+        <div class="info-box">
+          <h3>File System (FS)</h3>
+          <p>Implemented my own driver for a new file system, SFS, loosely based on FAT. It supports (sub)directories and files of varying size, along with file and directory navigation, creation, removal, and modification.</p>
+        </div>
+        <div class="info-box">
+          <h3>Kvstore</h3>
+          <p>Implemented my own remote in-memory key-value store, supporting multiple concurrent clients with SET, GET, and DEL operations. This meant writing a server application, using multiple threads to support parallel clients, and protecting data structures against concurrent access.</p>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <h2>Subset of the Java Virtual Machine (IJVM)</h2>
+      <p class="intro">Implemented a subset of the Java Virtual Machine (IJVM) in C. Running an IJVM program meant running a binary against a suite of five basic tests and eight advanced tests, plus some bonus tests.</p>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Basic tests</h3>
+          <p>Created the framework and implemented the stack and switch functions, structs, and IJVM functions to build a subset program of the Java Virtual Machine.</p>
+        </div>
+        <div class="info-box">
+          <h3>Advanced tests</h3>
+          <p>Seven of the eight tests expanded on the basic tests, exercising functions that should have already been implemented to make the implementation more advanced. The eighth tested the stack in the overall project.</p>
+        </div>
+        <div class="info-box">
+          <h3>Bonus tests</h3>
+          <p>Created a bonus heap and a garbage collector for extra points.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-nav">
+      <a class="btn ghost" href="recommendation-model.html">&lsaquo; Previous Project</a>
+      <a class="btn ghost" href="clothing-identification-app.html">Next Project &rsaquo;</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Amsterdam, NL &middot; <a href="mailto:cado.gala@gmail.com">cado.gala@gmail.com</a></footer>
+
+</body>
+</html>

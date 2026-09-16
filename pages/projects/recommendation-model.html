@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Building a Recommendation Model &mdash; Gala Cado</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Gala &Ccaron;ado
+      <div class="logo-sub">MSc student, Security &amp; Network Engineering</div>
+    </div>
+    <div class="navlinks">
+      <a href="../../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <p class="eyebrow">BSc Coursework &middot; Machine Learning</p>
+    <h1 class="page-title">Building a Recommendation Model</h1>
+    <p class="project-meta">Vrije Universiteit Amsterdam</p>
+    <p class="intro">Built a recommendation model to predict which anime an individual user is likely to enjoy, using machine learning techniques.</p>
+    <div class="tag-row">
+      <span class="tag">machine learning</span>
+      <span class="tag">recommendation systems</span>
+      <span class="tag">python</span>
+    </div>
+  </section>
+
+  <section class="section project-body">
+
+    <div class="block">
+      <p class="intro">Working in a group with fellow students, we built a recommendation model to predict which anime an individual user is likely to enjoy. Two distinct models were developed and evaluated &mdash; Matrix Factorization (including a Non-Negative variant) and Neural Collaborative Filtering (NCF) &mdash; each leveraging different techniques to capture user preferences and item features.</p>
+    </div>
+    <div class="block">
+      <h2>My contribution</h2>
+      <p class="intro">I implemented and tested both the Matrix Factorization and Non-Negative Matrix Factorization algorithms. These techniques decompose the user-item interaction matrix into lower-dimensional matrices that capture latent features such as preferences, with the non-negative variant constraining all elements of the factor matrices to be non-negative. Through iterative optimisation such as stochastic gradient descent, the algorithm learns embeddings that minimise reconstruction error, with early stopping to prevent overfitting.</p>
+      <p class="intro">Both algorithms were trained on clustered and unclustered data to compare performance: as expected, the models performed noticeably better on clustered data, with lower error and substantially shorter training times.</p>
+    </div>
+    <div class="block">
+      <h2>Findings</h2>
+      <p class="intro">The NCF model outperformed both Matrix Factorization variants, showing lower error rates and the fastest convergence of the three &mdash; suggesting it&rsquo;s a promising approach for recommendation systems in similar contexts.</p>
+    </div>
+    
+    <div class="project-nav">
+      <a class="btn ghost" href="koofr-chatbot.html">&lsaquo; Previous Project</a>
+      <a class="btn ghost" href="programming-in-c.html">Next Project &rsaquo;</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Amsterdam, NL &middot; <a href="mailto:cado.gala@gmail.com">cado.gala@gmail.com</a></footer>
+
+</body>
+</html>

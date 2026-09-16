@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Memory &amp; Disk Forensics &mdash; Gala Cado</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Gala &Ccaron;ado
+      <div class="logo-sub">MSc student, Security &amp; Network Engineering</div>
+    </div>
+    <div class="navlinks">
+      <a href="../../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <p class="eyebrow">MSc Coursework &middot; Cybercrime &amp; Forensics</p>
+    <h1 class="page-title">Memory &amp; Disk Forensics</h1>
+    <p class="project-meta">University of Amsterdam &middot; Cybercrime &amp; Forensics</p>
+    <p class="intro">Investigated a system image with Volatility and Scalpel, reconstructing a timeline of user activity.</p>
+    <div class="tag-row">
+      <span class="tag">volatility</span>
+      <span class="tag">scalpel</span>
+      <span class="tag">digital forensics</span>
+      <span class="tag">incident reconstruction</span>
+    </div>
+  </section>
+
+  <section class="section project-body">
+
+    <div class="block">
+      <h2>Overview</h2>
+      <p class="intro">Given disk and memory images from a simulated incident, the task was to reconstruct what actually happened on the machine: which processes ran, what the attacker did, and what evidence could be recovered even after files had been deleted.</p>
+    </div>
+    <div class="block">
+      <h2>Approach</h2>
+      <ul>
+        <li>Used Volatility to enumerate running and hidden processes, active network connections, and injected code within the memory image.</li>
+        <li>Used Scalpel for file carving to recover deleted files directly from the disk image.</li>
+        <li>Cross-referenced timestamps across the registry, filesystem, and memory artifacts to build a coherent timeline of activity.</li>
+        <li>Documented findings and chain of custody in a formal forensic report.</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Outcome</h2>
+      <p class="intro">The investigation identified clear indicators of compromise and allowed a full reconstruction of the attacker&rsquo;s actions on the system, from initial access to the artifacts left behind.</p>
+    </div>
+    
+    <div class="project-nav">
+      <a class="btn ghost" href="ble-mitm-proxy.html">&lsaquo; Previous Project</a>
+      <a class="btn ghost" href="app-security-assessment.html">Next Project &rsaquo;</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Amsterdam, NL &middot; <a href="mailto:cado.gala@gmail.com">cado.gala@gmail.com</a></footer>
+
+</body>
+</html>

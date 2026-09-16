@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bluetooth LE MITM Proxy &mdash; Gala Cado</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Gala &Ccaron;ado
+      <div class="logo-sub">MSc student, Security &amp; Network Engineering</div>
+    </div>
+    <div class="navlinks">
+      <a href="../../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <p class="eyebrow">MSc Coursework &middot; Advanced Security</p>
+    <h1 class="page-title">Bluetooth LE MITM Proxy</h1>
+    <p class="project-meta">University of Amsterdam &middot; Advanced Security</p>
+    <p class="intro">Built a proxy that intercepts and modifies live Bluetooth Low Energy device traffic in real time.</p>
+    <div class="tag-row">
+      <span class="tag">python</span>
+      <span class="tag">bluez / d-bus</span>
+      <span class="tag">ble</span>
+      <span class="tag">mitm</span>
+    </div>
+  </section>
+
+  <section class="section project-body">
+
+    <div class="block">
+      <h2>Overview</h2>
+      <p class="intro">Many BLE peripherals trust a paired connection implicitly, with little verification of the data flowing over it. For this assignment I built a GATT-level man-in-the-middle proxy that sits between a BLE peripheral and its companion app, relaying traffic transparently by default and selectively rewriting it on the fly.</p>
+    </div>
+    <div class="block">
+      <h2>Approach</h2>
+      <ul>
+        <li>Used BlueZ and D-Bus on Linux to advertise a cloned GATT server while simultaneously connecting to the real peripheral as a client.</li>
+        <li>Forwarded characteristic reads and writes transparently between both sides by default.</li>
+        <li>Intercepted specific characteristics to alter values in transit &mdash; spoofing sensor data and bypassing simple authentication checks.</li>
+        <li>Tested the proxy against a real BLE peripheral to confirm the attack worked outside of a purely theoretical setup.</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Takeaway</h2>
+      <p class="intro">The exercise demonstrated how easily BLE connections can be intercepted when devices don&rsquo;t pair with proper encryption and mutual verification &mdash; a gap that&rsquo;s still common in consumer IoT hardware.</p>
+    </div>
+    
+    <div class="project-nav">
+      <a class="btn ghost" href="cve-2021-3156.html">&lsaquo; Previous Project</a>
+      <a class="btn ghost" href="forensics-investigation.html">Next Project &rsaquo;</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Amsterdam, NL &middot; <a href="mailto:cado.gala@gmail.com">cado.gala@gmail.com</a></footer>
+
+</body>
+</html>
