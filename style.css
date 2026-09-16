@@ -17,7 +17,7 @@ body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
 a{color:inherit; text-decoration:none;}
 .wrap{max-width:900px; margin:0 auto; padding:0 28px;}
 
-header{padding:28px 0;}
+header{padding:28px 0; border-bottom:1px solid var(--line);}
 nav{
   display:flex; align-items:center; justify-content:space-between;
   max-width:900px; margin:0 auto; padding:0 28px;
@@ -84,10 +84,11 @@ footer{padding:40px 0; text-align:center; color:var(--text-dim); font-size:13px;
 .page-hero + .section{padding-top:8px;}
 .page-hero .eyebrow{margin-bottom:10px;}
 .page-hero h1{font-size:clamp(24px,3.6vw,32px); margin:0;}
-.page-hero .intro{max-width:none; margin:0;}
+.page-hero .intro{max-width:none; margin:10px 0 0;}
 .page-hero .intro:last-child{margin-bottom:16px;}
 .page-hero hr{border:0; border-top:1px solid var(--line); margin:24px 0 0;}
 .project-body hr{border:0; border-top:1px solid var(--line); margin:0 0 28px;}
+.section hr{border:0; border-top:1px solid var(--line); margin:32px 0;}
 .section h2.page-title{font-size:clamp(24px,3.6vw,32px);}
 
 .entry{padding:26px 0; border-top:1px solid var(--line);}
