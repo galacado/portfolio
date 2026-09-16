@@ -36,20 +36,21 @@
 
     <div class="block">
       <h2>Overview</h2>
-      <p class="intro">Given disk and memory images from a simulated incident, the task was to <strong>reconstruct what actually happened</strong> on the machine: which processes ran, what the attacker did, and what evidence could be recovered even after files had been deleted.</p>
+      <p class="intro">Given a memory dump and disk image from a Windows XP machine, the task was to <strong>reconstruct what happened</strong> on it: what was running, whether anything looked like malware, and what evidence survived after the user ran cleanup tools.</p>
     </div>
     <div class="block">
       <h2>Approach</h2>
-      <ul>
-        <li>Used <strong>Volatility</strong> to enumerate running and hidden processes, active network connections, and injected code within the memory image.</li>
-        <li>Used <strong>Scalpel</strong> for file carving to recover deleted files directly from the disk image.</li>
-        <li>Cross-referenced timestamps across the registry, filesystem, and memory artifacts to build a coherent timeline of activity.</li>
-        <li>Documented findings and chain of custody in a formal forensic report.</li>
+      <ul class="full-size">
+        <li>Acquired a forensic image from an offline hard disk over a write-blocked SATA-to-USB connection using <strong>Guymager</strong>, documenting every step and tool version to preserve chain of custody,</li>
+        <li>Identified the memory dump&rsquo;s OS with Volatility&rsquo;s <code>imageinfo</code> plugin (Windows XP SP3), then used <code>pslist</code> and <code>psxview</code> to check for hidden or masked processes, finding none,</li>
+        <li>Ran <code>malfind</code> on the memory image and found two browser processes with writable-and-executable memory regions, a pattern <strong>consistent with code injection</strong>,</li>
+        <li>Used <strong>Scalpel</strong> to carve deleted files directly off the disk image, and manually reviewed the mounted filesystem for artefacts such as the Tor Browser installer and files referencing malware and phishing test material,</li>
+        <li>Cross-referenced Volatility&rsquo;s memory timeline with <code>fls</code>/<code>mactime</code> on the disk to build a single timeline of the session, browsing, a Tor Browser launch, and CCleaner running shortly before shutdown.</li>
       </ul>
     </div>
     <div class="block">
       <h2>Outcome</h2>
-      <p class="intro">The investigation identified <strong>clear indicators of compromise</strong> and allowed a full reconstruction of the attacker&rsquo;s actions on the system, from initial access to the artifacts left behind.</p>
+      <p class="intro">The investigation surfaced suggestive evidence rather than definitive proof: writable-and-executable memory inside two browser processes, consistent with code injection, and evidence of malware and phishing test material accessed through Tor, shortly before CCleaner ran and likely removed part of the trail.</p>
     </div>
     
     <div class="project-nav">

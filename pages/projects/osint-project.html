@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>OSINT vs. Platform Data &middot; Gala Cado</title>
+<title>OSINT vs. Server-Side Social Media Data for Digital Investigations &middot; Gala Cado</title>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -26,9 +26,9 @@
 
   <section class="page-hero">
     <p class="eyebrow">OSINT &middot; Digital Investigations</p>
-    <h1 class="page-title">OSINT vs. Platform Data</h1>
+    <h1 class="page-title">OSINT and Server-Side Social Media Data Use for Digital Investigations</h1>
     <p class="project-meta">University of Amsterdam &middot; Course: Cybercrime &amp; Forensics</p>
-    <p class="intro">Compared public OSINT with server-side platform data for digital investigations, mapped against EU and Dutch legal thresholds.</p>
+    <p class="intro">Compared how public OSINT and server-side platform data could be used in digital investigations, mapped against EU and Dutch legal thresholds.</p>
     <hr>
   </section>
 
@@ -36,15 +36,20 @@
 
     <div class="block">
       <h2>Overview</h2>
-      <p class="intro">This assignment examined the gap between what investigators can learn from open-source intelligence alone, and what is only obtainable through a formal request for <strong>server-side platform data</strong>, and when each is actually legally accessible.</p>
+      <p class="intro">In a group we examined the gap between what investigators can learn from open-source intelligence alone on Instagram and X, and what&rsquo;s only obtainable through a formal request for <strong>server-side platform data</strong>, comparing this against EU and Dutch legal thresholds. My part focused on the <strong>legal classification</strong>: mapping how each data category is treated under EU and Dutch law.</p>
     </div>
     <div class="block">
       <h2>Approach</h2>
-      <ul>
-        <li>Compared the evidentiary value and completeness of OSINT-derived data against platform-held data for a representative investigative scenario.</li>
-        <li>Mapped which categories of data <strong>require a legal order under EU and Dutch law</strong>, such as production orders and data-retention rules, versus what is lawfully accessible as open-source information.</li>
-        <li>Assessed the practical and legal trade-offs investigators face between speed (OSINT) and completeness (platform data).</li>
+      <ul class="full-size">
+        <li>Catalogued what&rsquo;s visible through OSINT alone on public Instagram and X profiles, using privacy policies, API documentation, and passive client-server traffic analysis, versus what only surfaces in a platform&rsquo;s own data export or server-side records,</li>
+        <li>Mapped each data category, identifying/subscriber data, traffic data, and content, against the EU&rsquo;s <strong>E-Evidence Regulation</strong> and the stricter thresholds in the Dutch <strong>Wetboek van Strafvordering</strong>, where nearly all categories require <strong>suspicion of a serious offence</strong> under Article 67(1),</li>
+        <li>Compared these legal thresholds against Instagram&rsquo;s and X&rsquo;s own law-enforcement disclosure guidelines to see how platform practice lines up with the legal categories,</li>
+        <li>Defined <strong>indicators that justify escalating</strong> from OSINT to a formal data request, illustrated with real cases: a child sexual exploitation case, where public signs of contact with minors justified requesting DMs, and a stalking case, where public images plus a serious offence justified requesting upload logs and metadata.</li>
       </ul>
+    </div>
+    <div class="block">
+      <h2>Outcome</h2>
+      <p class="intro">Publicly accessible data proved useful for <strong>early leads and reconstructing context</strong>, but consistently lacked the technical and behavioural detail needed for reliable attribution, timing, or location analysis. Server-side data resolved these gaps, but access is <strong>time-sensitive</strong> and requires meeting a much higher legal bar, especially under <strong>Dutch law, which is stricter than the general EU framework</strong>.</p>
     </div>
     
     <div class="project-nav">
