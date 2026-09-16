@@ -83,8 +83,9 @@ footer{padding:40px 0; text-align:center; color:var(--text-dim); font-size:13px;
 .page-hero{padding:48px 0 12px;}
 .page-hero + .section{padding-top:8px;}
 .page-hero .eyebrow{margin-bottom:10px;}
-.page-hero h1{font-size:clamp(24px,3.6vw,32px); margin:0 0 10px;}
+.page-hero h1{font-size:clamp(24px,3.6vw,32px); margin:0;}
 .page-hero .intro{max-width:none; margin:0;}
+.page-hero .intro:last-child{margin-bottom:16px;}
 .page-hero hr{border:0; border-top:1px solid var(--line); margin:24px 0 0;}
 .project-body hr{border:0; border-top:1px solid var(--line); margin:0 0 28px;}
 .section h2.page-title{font-size:clamp(24px,3.6vw,32px);}
