@@ -153,3 +153,12 @@ footer{padding:40px 0; text-align:center; color:var(--text-dim); font-size:13px;
 .project-nav .btn{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono);}
 .project-nav .spacer{flex:1;}
 
+.media-placeholder{
+  border:1px dashed var(--accent); border-radius:8px; background:var(--accent-soft);
+  padding:36px 20px; text-align:center; font-family:var(--mono); font-size:11.5px;
+  color:var(--accent); line-height:1.6;
+}
+.media-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:18px 0;}
+.media-grid.single{grid-template-columns:1fr; max-width:520px;}
+
+
