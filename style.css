@@ -47,6 +47,7 @@ h1{
 }
 .intro{max-width:820px; color:var(--body-dim); font-size:16.5px; font-family:var(--body);}
 .intro strong{color:var(--text); font-weight:600;}
+.intro a{text-decoration:underline; text-underline-offset:2px;}
 
 /* buttons: monospace + slightly rounder corners, borrowed from the technical direction */
 .cta-row{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
