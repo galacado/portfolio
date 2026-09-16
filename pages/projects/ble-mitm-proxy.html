@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bluetooth LE MITM Proxy &mdash; Gala Cado</title>
+<title>Bluetooth LE MITM Proxy &middot; Gala Cado</title>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -36,20 +36,20 @@
 
     <div class="block">
       <h2>Overview</h2>
-      <p class="intro">Many BLE peripherals trust a paired connection implicitly, with little verification of the data flowing over it. For this assignment I built a GATT-level man-in-the-middle proxy that sat between a BLE peripheral and its companion app, relaying traffic transparently by default and selectively rewriting it on the fly.</p>
+      <p class="intro">Many BLE peripherals trust a paired connection implicitly, with little verification of the data flowing over it. For this assignment I built a <strong>GATT-level man-in-the-middle proxy</strong> that sat between a BLE peripheral and its companion app, relaying traffic transparently by default and selectively rewriting it on the fly.</p>
     </div>
     <div class="block">
       <h2>Approach</h2>
       <ul>
-        <li>Used BlueZ and D-Bus on Linux to advertise a cloned GATT server while simultaneously connecting to the real peripheral as a client.</li>
+        <li>Used <strong>BlueZ and D-Bus</strong> on Linux to advertise a cloned GATT server while simultaneously connecting to the real peripheral as a client.</li>
         <li>Forwarded characteristic reads and writes transparently between both sides by default.</li>
-        <li>Intercepted specific characteristics to alter values in transit &mdash; spoofing sensor data and bypassing simple authentication checks.</li>
+        <li>Intercepted specific characteristics to alter values in transit, <strong>spoofing sensor data and bypassing simple authentication checks</strong>.</li>
         <li>Tested the proxy against a real BLE peripheral to confirm the attack worked outside of a purely theoretical setup.</li>
       </ul>
     </div>
     <div class="block">
       <h2>Takeaway</h2>
-      <p class="intro">The exercise demonstrated how easily BLE connections can be intercepted when devices did not pair with proper encryption and mutual verification &mdash; a gap that was still common in consumer IoT hardware.</p>
+      <p class="intro">The exercise demonstrated how easily BLE connections can be intercepted when devices did not pair with proper encryption and mutual verification, a gap that was <strong>still common in consumer IoT hardware</strong>.</p>
     </div>
     
     <div class="project-nav">
